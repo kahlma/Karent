@@ -23,5 +23,17 @@ namespace WindowsFormsApp11
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
+
+        private PictureBox createPB()
+        {
+            PictureBox pictureBox = new PictureBox();
+            pictureBox.Location = new System.Drawing.Point(3, 3);
+            pictureBox.Name = "pictureBox1";
+            pictureBox.Size = new System.Drawing.Size(100, 50);
+            pictureBox.TabIndex = 0;
+            pictureBox.TabStop = false;
+
+            return pictureBox;
+        }
     }
 }
