@@ -12,6 +12,8 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp11
 {
+    Form1 frm1 = new Form1();
+    
     public partial class Form3 : MaterialForm
     {
         public Form3()
@@ -22,6 +24,12 @@ namespace WindowsFormsApp11
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+        }
+        
+        private void materialFlatButton1_Click(object sender, EventArgs e)
+        {
+            new Form2().Show();
+            this.Hide();
         }
     }
 }
